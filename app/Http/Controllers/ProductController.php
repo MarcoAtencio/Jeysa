@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view("");
+        return view('products.ProductRegist');
     }
 
     /**
@@ -38,7 +38,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product();
+        $product->name = $request->txtnomre;
+        $product->price = "";
+        $product->description = ""; 
+        $product->ID_Type = "";
+        $product->ID_Gender ="";
     }
 
     /**
@@ -60,7 +65,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('products.ProductUpdate');
     }
 
     /**

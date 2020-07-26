@@ -19,7 +19,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Tipo</label>
                 <div class="col-sm-10">
-                    <select class="custom-select is-invalid">
+                    <select class="custom-select is-invalid" name="tipo">
                         <option name="0">Prueba</option>
                     </select>
                 </div>
@@ -27,7 +27,7 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Talla</label>
                 <div class="col-sm-10">
-                    <select class="custom-select is-invalid">
+                    <select class="custom-select is-invalid" name="talla">
                         <option name="0">Prueba</option>
                     </select>
                 </div>
