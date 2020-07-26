@@ -19,7 +19,7 @@ Route::resource("/admin/product","ProductController");
 Route::resource("/admin","AdminController");
 
 
-<<<<<<< HEAD
+Auth::routes();
 Route::get('/Administrador/ProductList', function () {
     return view('products.ProductList');
 });
@@ -27,15 +27,13 @@ Route::get('/Administrador/ProductList', function () {
 Route::get('/Administrador/ProductDelete', function () {
     return view('products.ProductDelete');
 });
-Route::get('/admin/coment', function () {
-=======
 
 Route::get('/Administrador', function () {
     return view('admin');
 });
 
 
-/*PRDUCTOS*/
+/*PRDUCTOS
 Route::get('/Administrador/ProductRegist', function () {
     return view('products.ProductRegist');
 });
@@ -51,7 +49,7 @@ Route::get('/Administrador/ProductDelete', function () {
 
 
 
-/*EMPLEADOS*/
+
 Route::get('/Administrador/employeeRegist', function () {
     return view('employee.employeeRegist');
 });
@@ -67,21 +65,12 @@ Route::get('/Administrador/employeeDelete', function () {
 
 
 
-/*COMENTARIOS*/
+COMENTARIOS
 Route::get('/Administrador/Coment', function () {
->>>>>>> Javier
+
     return view('coments.coment');
 });
+*/
 
-
-<<<<<<< HEAD
 /*COMENTARIOS*/
-=======
-
-
-
-
->>>>>>> Javier
-Auth::routes();
-
 
