@@ -1,0 +1,269 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-center{
+    margin: auto;
+    text-align: center;
+}
+.lineaRigth{
+    border-right: 2px solid #F79B38;
+}
+
+.topmargin-lg{ margin-top: 120px; }
+.topmargin-md{ margin-top: 100px; }
+.topmargin-sm{ margin-top: 30px; }
+.topmargin-xs{ margin-top: 8px; }
+
+/*NAVBAR*/
+.navbar{
+    min-height: 60px;
+    text-align: center;
+    background: white;
+    background: #F79B38;
+}
+.navbar img{
+    width: 70px;
+}
+.navbar .dropdown a{
+    font-size: 17px;
+    margin: auto;
+    color: #1a1a1a;
+}
+.navbar .dropdown a:hover{
+    background: white;
+}
+.dropdown button{
+    background: #E3831D;
+    border: none;
+    color: white;
+}
+.dropdown button:hover{
+    color: white;
+}
+
+
+/*PRINCIPAL*/
+#principal{
+    background-image: url(../image/fondoprincipal.jpg);
+    width: 100%;
+    min-height: 500px;
+}
+h1{
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+}
+.botones{
+    width: 90%;
+    min-height: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+.botones .varones h2{
+    color:#2B2E52;
+}
+.botones .productos h2{
+    color:#0D653B;
+}
+.botones .damas h2{
+    color:#E489FF;
+}
+.botones .comentario h2{
+    color:#3C6077;
+}
+.botones a{
+    text-decoration: none;
+}
+.botones .boton{
+    width: 90%;
+    min-height: 150px;
+    background: #C9C9C9;
+    margin-top: 20px;
+}
+.boton h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.boton i{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.botones .botonrigth{
+    width: 90%;
+    min-height: 150px;
+    margin: auto;
+    background: #E4E4E4;
+    margin-top: 20px;
+}
+.botonrigth h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.botonrigth i{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+/*REGISTRAR*/
+#productRegist .alert{
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+#productRegist .btnregistrar{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+#productRegist .btnregistrar button{
+    width: 150px;
+}
+
+/*LISTA PRODUCTO*/
+#productList{
+    margin-top: 120px;
+}
+#productList .contenedor{
+    width: 90%;
+    min-height: 750px;
+    margin: auto;
+}
+
+/*ACTUALIZAR PRODUCTO*/
+#productUpdate .alert{
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+#productUpdate .btnregistrar{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+#productUpdate .btnregistrar button{
+    width: 150px;
+}
+
+/*ELIMINAR PRODUCTO*/
+#productDelete{
+    margin-top: 120px;
+    min-height: 780px;
+}
+#productDelete .contenedor{
+    width: 90%;
+    min-height: 750px;
+    margin: auto;
+}
+
+
+/*DELETE COMENTARIOS*/
+#coment{
+    margin-top: 120px;
+    min-height: 780px;
+}
+#coment .contenedor{
+    width: 85%;
+    margin: auto;
+}
+
+
+/*ATRAS BOTON*/
+.atras .todo{
+    position:fixed;
+    width:50px;
+    height:40px;
+    bottom:30px;
+    right:96%;
+    background-color:#3A3A3A;
+    color:white;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.atras .my-atras{
+    margin-top:11px;
+}
+
+
+
+/*FOOTER*/
+#footer{
+    width: 100%;
+    min-height: 200px;
+    /*border: 1px solid black;*/
+    background: #1d2124;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 8px solid #F79B38;
+}
+#footer .contenedor{
+    width: 90%;
+    margin: auto;
+}
+#footer .column{
+    width: 100%;
+    min-height: 150px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.column img{
+    width: 180px;
+}
+.column i{
+    font-size: 16px;
+    color: #1d68a7;
+}
+.column h2{
+    color: white;
+    margin-top: 10px;
+    font-size: 45px;
+}
+.column h5{
+    color: white;
+    font-size: 20px;
+}
+.column h6{
+    color: white;
+    font-size: 16px;
+}
+
+.column h3{
+    font-size: 23px;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F79B38;
+}
+#footer .column .desarollador{
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+}
+.desarollador h4{
+    font-size: 16px;
+    color: white;
+}
+.desarollador img{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
