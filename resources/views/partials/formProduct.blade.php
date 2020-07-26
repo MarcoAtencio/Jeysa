@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
 
-    <div id="productUpdate">
+    <div id="productRegist">
         <div class="container">
             <div class="alert alert-success topmargin-md content-center" role="alert">
                 <b>Alerta!</b><br>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="btnregistrar">
-                        <button class="btnreg btn btn-dark" name="accion" value="Actualizar">Actualizar</button>
+                        <button class="btnreg btn btn-dark" name="accion" value="Registrar">Registrar</button>
                     </div>
                 </div>
 

@@ -23,7 +23,7 @@
                 </tr>
                 </thead>
                 <tbody>
-    
+
                 <tr>
                     <td></td>
                     <td></td>
@@ -42,9 +42,9 @@
                             <i class="far fa-edit"></i>
                         </a>
                     </td>
-                    
+
                 </tr>
-        
+
                 </tbody>
             </table>
 
