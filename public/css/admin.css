@@ -42,7 +42,62 @@ body{
     color: white;
 }
 
+/*EMPLEADOS*/
+/********************************/
+/*EMPLEADOS REGISTRO*/
+#employeeRegist{
+    width: 100%;
+    min-height: 770px;
+}
+#employeeRegist .alert{
+    margin-bottom: 30px;
+}
+#employeeRegist .btnregistrar{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+#employeeRegist .btnregistrar input{
+    width: 150px;
+    margin-top: 50px;
+}
 
+/*EMPLEADOS LISTAR*/
+#employeeList{
+    margin-top: 120px;
+    min-height: 770px;
+}
+
+/*EMPLEADOS ACTUALIZAR*/
+#employeeUpdate{
+    margin-top: 120px;
+    min-height: 770px;
+}
+#employeeUpdate .alert{
+    margin-bottom: 30px;
+}
+#employeeUpdate .btnregistrar{
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+#employeeUpdate .btnregistrar input{
+    width: 150px;
+    margin-top: 50px;
+}
+
+/*EMPLEADOS ELIMINAR*/
+#employeeDelete{
+    margin-top: 120px;
+    min-height: 770px;
+}
+
+
+
+/*PRODUCTOS*/
+/********************************/
 /*PRINCIPAL*/
 #principal{
     background-image: url(../image/fondoprincipal.jpg);
