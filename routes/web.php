@@ -14,8 +14,36 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/Administrador', function () {
+    return view('admin');
+});
+
+/*RESOURCE PRODUCTOS*/
+Route::get('/Administrador/ProductRegist', function () {
+    return view('products.ProductRegist');
+});
+Route::get('/Administrador/ProductUpdate', function () {
+    return view('products.ProductUpdate');
+});
+Route::get('/Administrador/ProductList', function () {
+    return view('products.ProductList');
+});
+Route::get('/Administrador/ProductUpdate', function () {
+    return view('products.ProductUpdate');
+});
+Route::get('/Administrador/ProductDelete', function () {
+    return view('products.ProductDelete');
+});
+
+/*COMENTARIOS*/
+Route::get('/Administrador/Coment', function () {
+    return view('coments.coment');
+});
+
+
 
 Auth::routes();
 
