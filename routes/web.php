@@ -13,19 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get("/admin",function (){
+    return view("admin");
+})->name("adminHome");
 Route::resource("/admin/product","ProductController");
+Route::resource("/admin/employee","EmployeeController");
 
-Route::resource("/admin","AdminController");
-
-
-
-Route::get('/Administrador', function () {
-    return view('admin');
-});
+Auth::routes();
 
 
-/*PRDUCTOS*/
+
+/*PRDUCTOS
 Route::get('/Administrador/ProductRegist', function () {
     return view('products.ProductRegist');
 });
@@ -41,7 +39,7 @@ Route::get('/Administrador/ProductDelete', function () {
 
 
 
-/*EMPLEADOS*/
+
 Route::get('/Administrador/employeeRegist', function () {
     return view('employee.employeeRegist');
 });
@@ -57,16 +55,12 @@ Route::get('/Administrador/employeeDelete', function () {
 
 
 
-/*COMENTARIOS*/
+COMENTARIOS
 Route::get('/Administrador/Coment', function () {
+
     return view('coments.coment');
 });
+*/
 
-
-
-
-
-
-Auth::routes();
-
+/*COMENTARIOS*/
 

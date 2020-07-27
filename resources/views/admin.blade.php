@@ -9,7 +9,7 @@
 
 <section class="botones">
     <div class="row">
-        <a href="Administrador/ProductRegist" class="botonrigth varones col-md-4">
+        <a href="{{route('product.create')}}" class="botonrigth varones col-md-4">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Registar producto varón</h2>
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </a>
-        <a href="Administrador/ProductList" class="boton varones col-md-4">
+        <a href="{{route('product.index')}}"  class="boton varones col-md-4">
         <div class="row">
             <div class="col-md-8">
                 <h2>Actualizar producto varón</h2>
@@ -39,7 +39,7 @@
                 </div>
             </div>
         </a>
-        <a href="Administrador/employeeRegist" class="boton productos col-md-3">
+        <a href="{{route('employee.create')}}" class="boton productos col-md-3">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Registrar usuario</h2>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </a>
-        <a href="Administrador/employeeList" class="botonrigth productos col-md-3">
+        <a href="{{route('employee.index')}}" class="botonrigth productos col-md-3">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Actualizar usuario</h2>

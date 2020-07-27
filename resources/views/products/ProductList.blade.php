@@ -11,7 +11,7 @@
                     <th scope="col">Nombre</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Talla</th>
-                    <th scope="col">Precio Anterior</th>
+                    <th scope="col">Descripcion</th>
                     <th scope="col">Descuento</th>
                     <th scope="col">Precio Actual</th>
                     <th scope="col">Stock</th>
@@ -23,15 +23,15 @@
                 </tr>
                 </thead>
                 <tbody>
-
+                @foreach($products as $product)
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Polos</td>
+                    <td>{{ $product->id }}</td>
+                    <td>{{ $product->name }}</td>
+                    <td>{{ $product->id }}</td>
                     <td>M</td>
-                    <td>50</td>
+                    <td>{{ $product->description }}</td>
                     <td>20 %</td>
-                    <td>40</td>
+                    <td>{{ $product->price }}</td>
                     <td>5</td>
                     <td>Imagen1</td>
                     <td>Imagen2</td>
@@ -44,18 +44,15 @@
                     </td>
 
                 </tr>
-
+@endforeach
                 </tbody>
             </table>
 
 
 
-        </div>
-        <div class="atras">
-            <a href="../Administrador" class="todo">
-                <i class="fas fa-angle-double-left my-atras"></i>
-            </a>
-        </div>
+
+            {{ $products->links() }}
+
     </div>
 
 @endsection
