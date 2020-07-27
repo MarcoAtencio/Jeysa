@@ -281,7 +281,8 @@ h1{
     text-align: center;
 }
 .column img{
-    width: 180px;
+    width: 130px;
+    margin-top: 40px;
 }
 .column i{
     font-size: 16px;
@@ -290,7 +291,7 @@ h1{
 .column h2{
     color: white;
     margin-top: 10px;
-    font-size: 45px;
+    font-size: 30px;
 }
 .column h5{
     color: white;
@@ -317,8 +318,8 @@ h1{
     color: white;
 }
 .desarollador img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin-top: 10px;
     border-radius: 50%;
 }
