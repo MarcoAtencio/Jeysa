@@ -33,9 +33,9 @@
                     <td>20 %</td>
                     <td>{{ $product->price }}</td>
                     <td>5</td>
-                    <td>Imagen1</td>
-                    <td>Imagen2</td>
-                    <td>Imagen3</td>
+                    <td>{{$product->imagen1}}</td>
+                    <td>{{$product->imagen2}}</td>
+                    <td>{{$product->imagen3}}</td>
                     <td>activo</td>
                     <td>
                         <a href="ProductUpdate">
@@ -44,7 +44,7 @@
                     </td>
 
                 </tr>
-@endforeach
+                @endforeach
                 </tbody>
             </table>
 
