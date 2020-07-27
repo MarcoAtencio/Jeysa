@@ -38,7 +38,7 @@
                     <td>Imagen3</td>
                     <td>activo</td>
                     <td>
-                        <a href="ProductUpdate">
+                        <a href="{{ route('product.edit',$product->id) }}">
                             <i class="far fa-edit"></i>
                         </a>
                     </td>

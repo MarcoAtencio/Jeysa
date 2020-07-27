@@ -98,12 +98,14 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param Product $product
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Product $product)
     {
-        //
+        $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();
+        $product->discount= $discount->amount;
+        return view("products.ProductUpdate",["product"=>$product]);
     }
 
     /**
