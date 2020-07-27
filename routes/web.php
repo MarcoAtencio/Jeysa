@@ -13,24 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'HomeController@index')->name('home');
-
+Route::get("/admin",function (){
+    return view("admin");
+})->name("adminHome");
 Route::resource("/admin/product","ProductController");
-
-Route::resource("/admin","AdminController");
-
+Route::resource("/admin/employee","EmployeeController");
 
 Auth::routes();
-Route::get('/Administrador/ProductList', function () {
-    return view('products.ProductList');
-});
 
-Route::get('/Administrador/ProductDelete', function () {
-    return view('products.ProductDelete');
-});
-
-Route::get('/Administrador', function () {
-    return view('admin');
-});
 
 
 /*PRDUCTOS

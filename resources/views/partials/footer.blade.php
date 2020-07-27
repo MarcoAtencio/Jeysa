@@ -6,7 +6,7 @@
                 <div class="column col-md-7">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="../image/logo2.png">
+                            <img src="../../image/logo2.png">
                             <h2>JEYSA 21</h2>
                         </div>
                         <div class="col-md-7">
@@ -40,11 +40,11 @@
                     <div class="row">
                         <div class="desarollador col-md-6">
                             <h4>Marco Atencio Maravi</h4>
-                            <img src="../image/marco.png">
+                            <img src="../../image/marco.png">
                         </div>
                         <div class="desarollador col-md-6">
                             <h4>Javier Galarza Calderón</h4>
-                            <img src="../image/javier.jpg">
+                            <img src="../../image/javier.jpg">
                         </div>
                     </div>
                 </div>

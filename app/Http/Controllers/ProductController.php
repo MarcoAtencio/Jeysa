@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Discount;
+use App\ImagesProduct;
 use App\Product;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-
 
 class ProductController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +17,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        dd($products);
+        $products = DB::table("products")->paginate(10);
+
+        return view("products.ProductList",["products" => $products]);
     }
 
     /**
@@ -27,7 +29,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.ProductRegist');
+        return view("products.ProductRegist");
     }
 
     /**
@@ -39,11 +41,47 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = new Product();
-        $product->name = $request->txtnomre;
-        $product->price = "";
-        $product->description = ""; 
-        $product->ID_Type = "";
-        $product->ID_Gender ="";
+        $product->name = $request->name;
+        $product->price = $request->price;
+        $product->description = $request->description;
+        $product->ID_Type = $request->type;
+        $product->ID_Gender =$request->gender;
+        $product->save();
+
+        $discount = new Discount();
+        $discount->amount = $request->discount;
+        $discount->ID_Product = $product->id;
+        $discount->save();
+
+
+        if($request->hasFile('photo1')){
+            $file = $request->file('photo1');
+            $name = time().$request->name.'1.png';
+            $file->move(public_path().'/product/img',$name);
+            $imageProduct = new ImagesProduct();
+            $imageProduct->path = $name;
+            $imageProduct->ID_Product = $product->id;
+            $imageProduct->save();
+        }
+        if($request->hasFile('photo2')){
+            $file = $request->file('photo2');
+            $name = time().$request->name.'2.png';
+            $file->move(public_path().'/product/img',$name);
+            $imageProduct=new ImagesProduct();
+            $imageProduct->path = $name;
+            $imageProduct->ID_Product = $product->id;
+            $imageProduct->save();
+        }
+        if($request->hasFile('photo3')){
+            $file = $request->file('photo3');
+            $name = time().$request->name.'3.png';
+            $file->move(public_path().'/product/img',$name);
+            $imageProduct=new ImagesProduct();
+            $imageProduct->path = $name;
+            $imageProduct->ID_Product = $product->id;
+            $imageProduct->save();
+        }
+        return redirect()->route('adminHome');
     }
 
     /**
@@ -65,7 +103,7 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        return view('products.ProductUpdate');
+        //
     }
 
     /**

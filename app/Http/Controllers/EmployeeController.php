@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        //
+        return view('employee.employeeList');
     }
 
     /**
@@ -23,7 +24,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        //
+        return view('employee.employeeRegist');
     }
 
     /**
@@ -34,7 +35,7 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('employee.employeeList');
     }
 
     /**
