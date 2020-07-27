@@ -22,6 +22,24 @@ Route::resource("/admin/employee","EmployeeController");
 Auth::routes();
 
 
+/*clientes*/
+Route::get('/client', function () {
+    return view('client');
+});
+Route::get('/client/dealings', function () {
+    return view('clients.dealings');
+});
+Route::get('/client/comments', function () {
+    return view('clients.comments');
+});
+Route::get('/client/man', function () {
+    return view('clients.man');
+});
+Route::get('/client/woman', function () {
+    return view('clients.woman');
+});
+
+
 
 /*PRDUCTOS
 Route::get('/Administrador/ProductRegist', function () {
