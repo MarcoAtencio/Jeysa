@@ -2,9 +2,6 @@
 @extends('layouts.client')
 @section('content')
 
-
-
-
     <div id="caballeros">
         <h1>Productos de varones</h1>
 
@@ -48,7 +45,7 @@
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
                                         <h6><i class="fas fa-tags"></i> -20%</h6>
-                                        <a href="#" class="iconver">
+                                        <a href="man/manDetail" class="iconver">
                                             <i class="fas fa-expand"></i> <br><h3>Ver</h3>
                                         </a>
                                         <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>

@@ -25,7 +25,7 @@ Auth::routes();
 /*clientes*/
 Route::get('/client', function () {
     return view('client');
-});
+})->name('client');
 Route::get('/client/dealings', function () {
     return view('clients.dealings');
 });
@@ -35,9 +35,16 @@ Route::get('/client/comments', function () {
 Route::get('/client/man', function () {
     return view('clients.man');
 });
+Route::get('/client/man/manDetail', function () {
+    return view('clients.manDetail');
+});
+Route::get('/client/politics', function () {
+    return view('clients.politics');
+});
 Route::get('/client/woman', function () {
     return view('clients.woman');
 });
+
 
 
 
