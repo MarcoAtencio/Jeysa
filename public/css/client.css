@@ -376,7 +376,7 @@ label{
 
 .contenedor .productos{
     width: 100%;
-    min-height: 400px;
+    min-height: 700px;
     margin: auto;
 }
 .contenedor #divcatalogo{
@@ -403,7 +403,7 @@ label{
 }
 .cab img{
     width: 140px;
-    height: 180px;
+    height: 200px;
     margin-bottom: 14px;
     -moz-transition: all 0.8s;
     -webkit-transition: all 0.8s;
