@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="servicio col-md-6 col-6">
-                        <a href="{{route('man.index')}}" class="content-center">
+                        <a href="https://jeysa21.herokuapp.com/man" class="content-center">
                             <div class="ser">
                                 <img src="image/hombre.png" alt=""/>
                                 <h3>Caballeros</h3>
@@ -40,7 +40,7 @@
                         </a>
                     </div>
                     <div class="servicio col-md-6 col-6">
-                        <a href="woman" class="content-center">
+                        <a href=https://jeysa21.herokuapp.com/woman" class="content-center">
                             <div class="ser">
                                 <img src="image/mujer.png" alt=""/>
                                 <h3 style="color: red">Damas</h3>
