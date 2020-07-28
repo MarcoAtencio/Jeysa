@@ -12,7 +12,7 @@
         <a href="{{route('product.create')}}" class="botonrigth varones col-md-4">
             <div class="row">
                 <div class="col-md-8">
-                    <h2>Registar producto varón</h2>
+                    <h2>Registar productos varón</h2>
                 </div>
                 <div class="col-md-4">
                     <i class="fas fa-edit"></i>
