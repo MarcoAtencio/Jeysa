@@ -30,6 +30,9 @@ Route::get('/', function () {
 Route::get('/dealings', function () {
     return view('clients.dealings');
 });
+Route::get('/politics', function () {
+    return view('clients.politics');
+});
 Route::get('/comments', function () {
     return view('clients.comments');
 });

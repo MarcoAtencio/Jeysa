@@ -66,7 +66,9 @@
                                                         <h4>Antes <br>S/. <del>{{ $product->price }}</del></h4>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <h5>Ahora <br>S/. 15</h5>
+                                                        {{ $des = ($product->price*$product->discount)/100 }}
+                                                        {{ $precio = $product->price - $des}}
+                                                        <h5>Ahora <br>S/. {{$precio}}</h5>
                                                     </div>
                                                 </div>
                                             </div>
