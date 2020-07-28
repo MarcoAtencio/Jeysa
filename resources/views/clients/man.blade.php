@@ -43,6 +43,7 @@
                         <div class="productos">
                             <div class="row">
 
+
                                 @foreach($products as $product)
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
@@ -72,7 +73,11 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 @endforeach
+
+                            </div>
+
                     </div>
                 </div>
 
@@ -81,7 +86,6 @@
         </div>
 
     </div>
-    <div class="linebotton"></div>
 
 
 @endsection
