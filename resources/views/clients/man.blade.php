@@ -42,35 +42,8 @@
                     <div class="row">
                         <div class="productos">
                             <div class="row">
-                                <div class="col-lg-4 col-md-6 col-6 content-center">
-                                    <div class="cab">
-                                        <h6><i class="fas fa-tags"></i> -20%</h6>
-                                        <a href="man/manDetail" class="iconver">
-                                            <i class="fas fa-expand"></i> <br><h3>Ver</h3>
-                                        </a>
-                                        <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>
-                                        <div class="cuadrilla">
-                                            <h2>Polo</h2>
-                                            <div class="contenido">
-                                                <div class="row content-center">
-                                                    <div class="col-md-6">
-                                                        <h3>Talla M</h3>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p>Stock 1 uni.</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h4>Antes <br>S/. <del>20</del></h4>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h5>Ahora <br>S/. 15</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
+                                @foreach($products as $product)
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
                                         <h6><i class="fas fa-tags"></i> -20%</h6>
@@ -79,7 +52,7 @@
                                         </a>
                                         <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>
                                         <div class="cuadrilla">
-                                            <h2>Polo</h2>
+                                            <h2>{{ $product->name }}</h2>
                                             <div class="contenido">
                                                 <div class="row content-center">
                                                     <div class="col-md-6">
@@ -89,7 +62,7 @@
                                                         <p>Stock 1 uni.</p>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <h4>Antes <br>S/. <del>20</del></h4>
+                                                        <h4>Antes <br>S/. <del>{{ $product->price }}</del></h4>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <h5>Ahora <br>S/. 15</h5>
@@ -99,34 +72,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-6 content-center">
-                                    <div class="cab">
-                                        <h6><i class="fas fa-tags"></i> -20%</h6>
-                                        <a href="#" class="iconver">
-                                            <i class="fas fa-expand"></i> <br><h3>Ver</h3>
-                                        </a>
-                                        <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>
-                                        <div class="cuadrilla">
-                                            <h2>Polo</h2>
-                                            <div class="contenido">
-                                                <div class="row content-center">
-                                                    <div class="col-md-6">
-                                                        <h3>Talla M</h3>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p>Stock 1 uni.</p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h4>Antes <br>S/. <del>20</del></h4>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <h5>Ahora <br>S/. 15</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                     </div>
                 </div>
 

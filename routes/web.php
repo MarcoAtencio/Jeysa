@@ -1,5 +1,6 @@
 <?php
 
+use App\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,13 +34,14 @@ Route::get('/client/comments', function () {
     return view('clients.comments');
 });
 Route::get('/client/man', function () {
-    return view('clients.man');
+    $products = Product::all();
+    return view('clients.man',["products" => $products]);
 });
-Route::get('/client/man/manDetail', function () {
+Route::get('/client/man/{id}', function () {
     return view('clients.manDetail');
 });
 Route::get('/client/politics', function () {
-    return view('clients.politics');
+
 });
 Route::get('/client/woman', function () {
     return view('clients.woman');
