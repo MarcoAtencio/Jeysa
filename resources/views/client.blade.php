@@ -40,7 +40,7 @@
                         </a>
                     </div>
                     <div class="servicio col-md-6 col-6">
-                        <a href="client/woman" class="content-center">
+                        <a href="woman" class="content-center">
                             <div class="ser">
                                 <img src="image/mujer.png" alt=""/>
                                 <h3 style="color: red">Damas</h3>

@@ -1,5 +1,5 @@
 Swal.fire({
-    html: 'Para la entrega de tu producto, <a href="client/politics">ingresa aqui</a> para mayor informacion .',
+    html: 'Para la entrega de tu producto, <a href="politics">ingresa aqui</a> para mayor informacion .',
     confirmButtonText: 'Acepto',
     icon: 'success',
     padding: '1rem',
