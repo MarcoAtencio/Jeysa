@@ -1,6 +1,7 @@
 <?php
 
 use App\Product;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,5 +36,23 @@ Route::get('/client/comments', function () {
 });
 Route::get('/client/man', function () {
     $products = Product::all();
+    $products= collect($products)->map(function ($product){
+        $image = DB::table('images')->where('ID_Product','=', $product->id)->get()->first();
+        $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();
+        $product->discount = $discount->amount;
+        if(isset($image->path)){
+            $product->image1 = $image->path;
+        }
+        else {
+
+        }
+
+        return $product;
+    });
+
     return view('clients.man',["products" => $products]);
 });
+
+Route::get('/client/{$id}', function () {
+    return view('clients.manDetail');
+})->name("showProduct");

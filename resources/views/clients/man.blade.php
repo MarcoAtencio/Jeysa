@@ -47,11 +47,11 @@
                                 @foreach($products as $product)
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
-                                        <h6><i class="fas fa-tags"></i> -20%</h6>
-                                        <a href="#" class="iconver">
+                                        <h6><i class="fas fa-tags"></i> {{ $product->discount }}%</h6>
+                                        <a href="{{route('showProduct',$product->id)}}"class="iconver">
                                             <i class="fas fa-expand"></i> <br><h3>Ver</h3>
                                         </a>
-                                        <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>
+                                        <img src="{{asset('product/img/'.$product->image1)}}" alt=""/>
                                         <div class="cuadrilla">
                                             <h2>{{ $product->name }}</h2>
                                             <div class="contenido">

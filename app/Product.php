@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $appends = ["discount"];
+    protected $appends = ["discount", "image1"];
 }
