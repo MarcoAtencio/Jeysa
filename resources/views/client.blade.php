@@ -8,13 +8,13 @@
             <div class="container">
                 <h4>Nuestras redes sociales</h4>
                 <div class="row" align="center">
-                    <div class="col-md-4 col-4"></div>
-                    <div class="col-md-2 col-2">
+                    <div class="col-md-4 col-3"></div>
+                    <div class="col-md-2 col-3">
                         <a href="https://www.facebook.com/JEYSA-21-101644014948245/" target="_blank">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
-                    <div class="col-md-2 col-2">
+                    <div class="col-md-2 col-3">
                         <a href="https://www.instagram.com/_jeysa_21/?igshid=jlxzqz9gp2z3" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
