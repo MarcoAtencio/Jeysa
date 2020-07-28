@@ -35,7 +35,7 @@ Route::get('/client/comments', function () {
 Route::get('/client/man', function () {
     return view('clients.man');
 });
-Route::get('/client/man/manDetail', function () {
+Route::get('/client/man/Detail', function () {
     return view('clients.manDetail');
 });
 Route::get('/client/politics', function () {
@@ -43,6 +43,9 @@ Route::get('/client/politics', function () {
 });
 Route::get('/client/woman', function () {
     return view('clients.woman');
+});
+Route::get('/client/woman/Detail', function () {
+    return view('clients.womanDetail');
 });
 
 

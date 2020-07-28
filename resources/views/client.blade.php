@@ -11,12 +11,12 @@
                 <div class="row" align="center">
                     <div class="col-md-4 col-4"></div>
                     <div class="col-md-2 col-2">
-                        <a href="https://www.facebook.com/" target="_blank">
+                        <a href="https://www.facebook.com/JEYSA-21-101644014948245/" target="_blank">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
                     <div class="col-md-2 col-2">
-                        <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                        <a href="https://www.instagram.com/_jeysa_21/?igshid=jlxzqz9gp2z3" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>

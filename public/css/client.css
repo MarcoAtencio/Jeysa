@@ -738,6 +738,10 @@ label{
     color: thistle;
 }
 #footer b{ color: white;}
+#footer a{
+    color: white;
+    text-decoration: none;
+}
 #footer i{
     font-size: 30px;
     margin-top: 25px;
@@ -765,6 +769,19 @@ label{
         font-weight: bold;
     }
     /*FOOTER*/
+    #footer p{
+        font-size: 12px;
+        text-align: center;
+    }
+    #footer b{
+        font-size: 12px;
+        text-align: center;
+    }
+    #footer i{
+        font-size: 20px;
+        color: white;
+        margin-top: -30px;
+    }
 }
 
 @media (max-width: 575.98px) {
