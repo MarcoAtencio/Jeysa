@@ -77,11 +77,6 @@
                                 @endforeach
 
                             </div>
-<<<<<<< HEAD
-
-=======
-                        </div>
->>>>>>> Javier
                     </div>
                 </div>
 
