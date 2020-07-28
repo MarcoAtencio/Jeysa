@@ -12,10 +12,10 @@
                     <a class="nav-link" href="" >Inicio </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dealings" >Zona de repartos</a>
+                    <a class="nav-link" href="../dealings" >Zona de repartos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comments" >Comentanos</a>
+                    <a class="nav-link" href="../comments" >Comentanos</a>
                 </li>
             </ul>
         </div>

@@ -5,13 +5,13 @@
 
 <body>
 
-@if(\Request::is('/'))
+@if(\Request::is('man/*'))
     @include('partials.navbarClient')
 @else
     @include('partials.navbarClientHome')
 @endif
 
-    @yield('content')
+@yield('content')
 
 @if(\Request::is('/'))
     @include('partials.dependencies')
