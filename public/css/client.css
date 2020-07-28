@@ -820,7 +820,7 @@ label{
         width: 100%;
     }
 
-    /*AU NO SE SABE*/
+    /*DETALLE DEL PRODUCTO*/
     /*******************************************/
     #productocaballero h1{
         font-size: 25px;
@@ -969,7 +969,7 @@ label{
         height: 100px;
     }
     .formcomentario input[type="submit"]{
-        width: 80px;
+        width: 90px;
         font-size: 13px;
         height: 32px;
         margin-top: 10px;

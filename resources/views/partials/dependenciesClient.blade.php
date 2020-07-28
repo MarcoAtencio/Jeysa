@@ -1,5 +1,5 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="{{asset('js/jquery.js')}}" type="text/javascript"></script>
+<script src="https://jeysa21.herokuapp.com/js/jquery.js" type="text/javascript"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 <script src="https://kit.fontawesome.com/437756fd95.js" crossorigin="anonymous"></script>

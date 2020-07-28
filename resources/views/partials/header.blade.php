@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <link href="{{asset('css/admin.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="https://jeysa21.herokuapp.com/css/client.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="icon" type="" href="{{asset('image/logo1.png')}}">
+    <link rel="icon" type="" href="https://jeysa21.herokuapp.com/image/logo1.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
