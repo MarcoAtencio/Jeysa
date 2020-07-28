@@ -5,20 +5,19 @@
 
 <body>
 
-@if(\Request::is('client/*'))
+@if(\Request::is('/'))
     @include('partials.navbarClient')
 @else
-
     @include('partials.navbarClientHome')
 @endif
 
     @yield('content')
 
-@if(\Request::is('client/*'))
-    @include('partials.footerClient')
+@if(\Request::is('/'))
     @include('partials.dependencies')
 @else
     @include('partials.dependenciesClient')
+    @include('partials.footerClient')
 @endif
 </body>
 </html>

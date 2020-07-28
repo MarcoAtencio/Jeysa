@@ -9,13 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="client" >Inicio </a>
+                    <a class="nav-link" href="/" >Inicio </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="client/dealings" >Zona de repartos</a>
+                    <a class="nav-link" href="dealings" >Zona de repartos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="client/comments" >Comentanos</a>
+                    <a class="nav-link" href="comments" >Comentanos</a>
                 </li>
             </ul>
         </div>
