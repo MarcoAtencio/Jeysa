@@ -2,7 +2,6 @@
 @section('content')
 
     <div id="principal">
-
         <section id="home">
             <h1>JEYSA 21</h1>
             <p>Ropa a tu alcance y al mejor precio, conoce nuestros prodcutos y la entrega sera en menos de 24 horas.</p>
@@ -52,8 +51,6 @@
                 </div>
             </div>
         </section>
-
-
     </div>
 
 @endsection

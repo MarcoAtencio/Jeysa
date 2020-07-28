@@ -1,55 +1,38 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/*GENERALES*/
+/*******************************************/
 .content-center{
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
-/*WHATSSAP*/
-.float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index:100;
+.content-class a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a1a1a;
 }
-.float:hover{
-    color:#A9FFBB;
+.content-class a:hover{
+    color: #626262;
 }
-
-.my-float{
-    margin-top:16px;
+.linebotton{
+    border-bottom: 4px solid #F79B38;
 }
-
-@media (max-width: 575.98px) {
-    .float{
-        width:40px;
-        height:40px;
-        bottom:25px;
-        right:25px;
-        font-size:20px;
-    }
-    .my-float{
-        margin-top:11px;
-    }
+label{
+    margin-top: 10px;
 }
-
-
-
+/*TOP*/
 .topmargin-lg{ margin-top: 120px; }
 .topmargin-md{ margin-top: 60px; }
 .topmargin-sm{ margin-top: 30px; }
 .topmargin-xs{ margin-top: 8px; }
 
+
+
 /*NAVBAR*/
+/*******************************************/
 .navbar{
     min-height: 60px;
     text-align: center;
@@ -76,6 +59,8 @@ body{
 
 .navbar-toggler i{ font-size: 25px; float: left;}
 .navbar-toggler:focus{ outline: none; }
+
+
 
 /*INDEX*/
 /**************************************************/
@@ -163,185 +148,12 @@ body{
 }
 
 
-/*REPARTO*/
-/**************************************************/
-#reparto{
-    margin-top: 120px;
-}
-#reparto h2{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 35px;
-    color: #4F4F4F;
-}
-#reparto h4{
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: #4F4F4F;
-}
-#reparto .rep{
-    width: 100%;
-    min-height: 250px;
-    margin-bottom: 25px;
-}
-#reparto .zona{
-    width: 80%;
-    border-radius: 20px;
-    background: #F5F5F5;
-    margin: auto;
-    padding: 10px;
-    -moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-}
-.zona:hover{
-    -moz-transform:  scale(1.2);
-    -webkit-transform:  scale(1.2);
-    transform: scale(1.1);
-}
-.zona a{
-    text-decoration: none;
-}
-.zona h3{
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-}
-.zona img{
-    width: 300px;
-    margin-bottom: 20px;
-}
-.zona p{
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #00063D;
-}
-.linebotton{
-    border-bottom: 6px solid #F79B38;
-}
-
-/*COMENTARIO*/
-
-#comentarios label{
-    margin-top: 15px;
-}
-
-#comentarios{
-    margin-top: 100px;
-}
-#comentarios h1{
-    text-align: center;
-    font-size: 35px;
-}
-#comentarios h2{
-    text-align: center;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.formcomentario{
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    margin-bottom: 80px;
-}
-.formcomentario input[type="text"]{
-    width: 50%;
-    border-radius: 10px;
-}
-.formcomentario textarea{
-    height: 150px;
-    border-radius: 10px;
-}
-.formcomentario input[type="submit"]{
-    width: 120px;
-    margin-top: 20px;
-    float: right;
-}
-
-.listacomentario{
-    width: 100%;
-    min-height: 500px;
-    background: #F0F0F0;
-    padding: 20px;
-}
-#comentarios .listacomentario h2{
-    margin-bottom: 30px;
-    font-size: 29px;
-}
-.listacomentario .coment{
-    width: 60%;
-    min-height: 100px;
-    background: #E8E8E8;
-    border-radius: 8px;
-    margin: auto;
-    padding: 25px;
-    margin-bottom: 30px;
-}
-.coment h3{
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-.coment p{
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-}
-.coment h5{
-    padding: 10px;
-    background: #D9D9D9;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    color: #565656;
-}
-.todocomentario .todo{
-    position:fixed;
-    width:40px;
-    height:40px;
-    bottom:40px;
-    right:95%;
-    background-color:#3A3A3A;
-    color:white;
-    border-radius:50px;
-    text-align:center;
-    font-size:20px;
-    box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
-.todocomentario .todo p{
-    width: 100px;
-    color: #3A3A3A;
-    font-size: 12px;
-
-}
-.todocomentario .my-todo{
-    margin-top:11px;
-}
-
-
-
-
-
-
-.content-class a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-.content-class a:hover{
-    color: #626262;
-}
-label{
-    margin-top: 10px;
-}
-
+/*PRODUCTOS*/
+/**********************************************/
 #caballeros{
     margin-top: 100px;
     background: #F3F3F3;
     min-height: 800px;
-
 }
 #caballeros h1{
     font-size: 28px;
@@ -363,8 +175,6 @@ label{
 }
 .contenedor .filtro{
     width: 100%;
-
-
 }
 .contenedor .filtro .filtrocuadro{
     width: 95%;
@@ -468,94 +278,8 @@ label{
 }
 
 
-
-
-@media (max-width: 575.98px) {
-    #caballeros{
-        margin-top: 80px;
-        margin-bottom: 15px;
-    }
-    #caballeros h1{
-        font-size: 20px;
-    }
-    .filtrocuadro{
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .filtrocuadro h3{
-        font-size: 18px;
-    }
-    label, option{
-        font-size: 13px;
-    }
-    .filtrocuadro .btnfiltrar{
-        font-size: 13px;
-        margin-top: -15px;
-        height: 30px;
-    }
-    .filtrocuadro form{
-        width: 90%;
-        height: 100%;
-        margin: auto;
-    }
-    .filtrocuadro select{
-        height: 32px;
-        font-size: 13px;
-    }
-    .contenedor .productos{
-        width: 90%;
-    }
-    .contenedor .productos .cab{
-        width: 100%;
-        height: auto;
-        margin: auto;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    .cab img{
-        width: 70px;
-        height: 90px;
-        margin-top: 40px
-    }
-    .cab h2{
-        font-size: 14px;
-        text-align: center;
-        width: 100%;
-    }
-    .cab h3{
-        font-size: 12px;
-        width: 100%;
-        margin-top: -3px;
-    }
-    .cab p{
-        font-size: 12px;
-        width: 100%;
-        margin-top: -3px;
-    }
-    .cab h4{
-        font-size: 12px;
-        width: 100%;
-        margin-top: -10px;
-    }
-    .cab h5{
-        width: 100%;
-        font-size: 12px;
-        margin-top: -3px;
-    }
-    .cab h6{
-        padding: 5px;
-        float: left;
-        border-radius: 5px;
-        background: #E70000;
-        color: white;
-        font-size: 10px;
-    }
-    .contenido{
-        width: 100%;
-    }
-}
-
-
+/*DETALLE DE PRODUCTOS*/
+/**********************************************/
 #productocaballero{
     background: #F3F3F3;
 }
@@ -693,7 +417,166 @@ label{
     letter-spacing: 1pt;
 }
 
+
+/*REPARTO*/
+/**************************************************/
+#reparto{
+    margin-top: 120px;
+}
+#reparto h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #4F4F4F;
+}
+#reparto h4{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+#reparto .rep{
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 25px;
+}
+#reparto .zona{
+    width: 80%;
+    border-radius: 20px;
+    background: #F5F5F5;
+    margin: auto;
+    padding: 10px;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.zona:hover{
+    -moz-transform:  scale(1.2);
+    -webkit-transform:  scale(1.2);
+    transform: scale(1.1);
+}
+.zona a{
+    text-decoration: none;
+}
+.zona h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+.zona img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.zona p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #00063D;
+}
+
+/*COMENTARIO*/
+/*******************************************/
+#comentarios label{
+    margin-top: 15px;
+}
+
+#comentarios{
+    margin-top: 100px;
+}
+#comentarios h1{
+    text-align: center;
+    font-size: 35px;
+}
+#comentarios h2{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.formcomentario{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.formcomentario input[type="text"]{
+    width: 50%;
+    border-radius: 10px;
+}
+.formcomentario textarea{
+    height: 150px;
+    border-radius: 10px;
+}
+.formcomentario input[type="submit"]{
+    width: 120px;
+    margin-top: 20px;
+    float: right;
+}
+
+.listacomentario{
+    width: 100%;
+    min-height: 500px;
+    background: #F0F0F0;
+    padding: 20px;
+}
+#comentarios .listacomentario h2{
+    margin-bottom: 30px;
+    font-size: 29px;
+}
+.listacomentario .coment{
+    width: 60%;
+    min-height: 100px;
+    background: #E8E8E8;
+    border-radius: 8px;
+    margin: auto;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.coment h3{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.coment p{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.coment h5{
+    padding: 10px;
+    background: #D9D9D9;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #565656;
+}
+.todocomentario .todo{
+    position:fixed;
+    width:40px;
+    height:40px;
+    bottom:40px;
+    right:95%;
+    background-color:#3A3A3A;
+    color:white;
+    border-radius:50px;
+    text-align:center;
+    font-size:20px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.todocomentario .todo p{
+    width: 100px;
+    color: #3A3A3A;
+    font-size: 12px;
+
+}
+.todocomentario .my-todo{
+    margin-top:11px;
+}
+
+
+
+
 /*POLITICAS*/
+/*******************************************/
 #politica{
     width: 100%;
     min-height: 780px;
@@ -722,6 +605,7 @@ label{
 }
 
 /*FOOTER*/
+/*******************************************/
 #footer{
     width: 100%;
     min-height: 80px;
@@ -748,43 +632,196 @@ label{
     color: white;
 }
 
-@media (max-width: 575.98px) {
-    #politica h1{
-        margin-top: 100px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    #politica .terminos{
-        width: 90%;
-        margin: auto;
-        margin-top: 30px;
-    }
-    .terminos li{
-        font-size: 13px;
-        margin-top: 15px;
-    }
-    .terminos a{
-        text-decoration: none;
-        color: #2F47AB;
-        font-weight: bold;
-    }
-    /*FOOTER*/
-    #footer p{
-        font-size: 12px;
-        text-align: center;
-    }
-    #footer b{
-        font-size: 12px;
-        text-align: center;
-    }
-    #footer i{
-        font-size: 20px;
-        color: white;
-        margin-top: -30px;
-    }
+
+/*WHATSSAP*/
+/*******************************************/
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover{
+    color:#A9FFBB;
 }
 
+.my-float{
+    margin-top:16px;
+}
+
+
+/*  ---MOVIL--- */
+/*==========================*/
+
 @media (max-width: 575.98px) {
+    /*NAVBAR*/
+    /*******************************************/
+    .navbar img{
+        width: 50px;
+    }
+    .navbar-toggler i{
+        font-size: 18px;
+        color: white;
+    }
+    .navbar .collapse a:hover{
+        border-bottom: none;
+    }
+    .collapse a{
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    /*INDEX*/
+    /*******************************************/
+    #principal{
+        padding-bottom: 50px;
+        border-bottom: 5px solid #F79B38;
+    }
+    #home{
+        background: -webkit-linear-gradient(to right, #f3743557, #fdc63041),url(../image/fondocel.jpg);
+        background: linear-gradient(to right, #f374353b, #fdc63048),url(../image/fondocel.jpg);
+        background-size: 100% 100%;
+        min-height: 600px;
+    }
+    #home h1{
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    #home p{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    #home h4{
+        font-size: 20px;
+    }
+    #home a{
+        font-size: 22px;
+    }
+    #home i{
+        margin-top: 20px;
+    }
+    #principal h2{
+        font-size: 25px;
+    }
+    .servicio .ser h3{
+        font-size: 20px;
+    }
+
+    .servicio .ser{
+        width: 90%;
+    }
+    .servicio .ser img{
+        width: 40px;
+        margin-top: 30px;
+    }
+    .servicio .ser h3{
+        font-size: 15px;
+    }
+    .servicio .ser p{
+        font-size: 12px;
+    }
+    #service{
+        margin-bottom: 50px;
+    }
+
+
+    /*PRODUCTOS*/
+    /**************************************/
+    #caballeros{
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+    #caballeros h1{
+        font-size: 20px;
+    }
+    .filtrocuadro{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .filtrocuadro h3{
+        font-size: 18px;
+    }
+    label, option{
+        font-size: 13px;
+    }
+    .filtrocuadro .btnfiltrar{
+        font-size: 13px;
+        margin-top: -15px;
+        height: 30px;
+    }
+    .filtrocuadro form{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .filtrocuadro select{
+        height: 32px;
+        font-size: 13px;
+    }
+    .contenedor .productos{
+        width: 90%;
+    }
+    .contenedor .productos .cab{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .cab img{
+        width: 70px;
+        height: 90px;
+        margin-top: 40px
+    }
+    .cab h2{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+    .cab h3{
+        font-size: 12px;
+        width: 100%;
+        margin-top: -3px;
+    }
+    .cab p{
+        font-size: 12px;
+        width: 100%;
+        margin-top: -3px;
+    }
+    .cab h4{
+        font-size: 12px;
+        width: 100%;
+        margin-top: -10px;
+    }
+    .cab h5{
+        width: 100%;
+        font-size: 12px;
+        margin-top: -3px;
+    }
+    .cab h6{
+        padding: 5px;
+        float: left;
+        border-radius: 5px;
+        background: #E70000;
+        color: white;
+        font-size: 10px;
+    }
+    .contenido{
+        width: 100%;
+    }
+
+    /*AU NO SE SABE*/
+    /*******************************************/
     #productocaballero h1{
         font-size: 25px;
         margin-top: 90px;
@@ -878,11 +915,7 @@ label{
         border-bottom: 6px solid #F79B38;
     }
 
-}
 
-
-
-@media (max-width: 575.98px) {
 
     /*REPARTO*/
     /**************************************************/
@@ -965,82 +998,63 @@ label{
         margin-top:6px;
     }
 
-}
 
-
-
-
-@media (max-width: 575.98px) {
-    .navbar img{
-        width: 50px;
-    }
-    .navbar-toggler i{
+    /*POLITICAS*/
+    /*******************************************/
+    #politica h1{
+        margin-top: 100px;
         font-size: 18px;
-        color: white;
+        font-weight: bold;
     }
-    .navbar .collapse a:hover{
-        border-bottom: none;
-    }
-    .collapse a{
-        font-size: 15px;
-        line-height: 10px;
-    }
-    /*index*/
-    /**************************************************/
-    #principal{
-        border-bottom: 5px solid #F79B38;
-    }
-    #home{
-        background: -webkit-linear-gradient(to right, #f3743557, #fdc63041),url(../Imagenes/fondocel.jpg);
-        background: linear-gradient(to right, #f374353b, #fdc63048),url(../Imagenes/fondocel.jpg);
-        background-size: 100% 100%;
-        min-height: 600px;
-    }
-    #home h1{
-        font-size: 40px;
-        margin-top: -20px;
-    }
-    #home p{
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        font-size: 16px;
-    }
-    #home h4{
-        font-size: 20px;
-    }
-    #home a{
-        font-size: 22px;
-    }
-    #home i{
-        margin-top: 20px;
-    }
-
-    #principal h2{
-        font-size: 25px;
-    }
-    .servicio .ser h3{
-        font-size: 20px;
-    }
-
-    .servicio .ser{
+    #politica .terminos{
         width: 90%;
-    }
-    .servicio .ser img{
-        width: 40px;
+        margin: auto;
         margin-top: 30px;
     }
-    .servicio .ser h3{
-        font-size: 15px;
+    .terminos li{
+        font-size: 13px;
+        margin-top: 15px;
     }
-    .servicio .ser p{
+    .terminos a{
+        text-decoration: none;
+        color: #2F47AB;
+        font-weight: bold;
+    }
+    /*FOOTER*/
+    /*******************************************/
+    #footer p{
         font-size: 12px;
+        text-align: center;
     }
-    #service{
-        margin-bottom: 50px;
+    #footer b{
+        font-size: 12px;
+        text-align: center;
+    }
+    #footer i{
+        font-size: 20px;
+        color: white;
+        margin-top: -30px;
     }
 
+    /*WHATSSAP*/
+    /*******************************************/
+    .float{
+        width:40px;
+        height:40px;
+        bottom:25px;
+        right:25px;
+        font-size:20px;
+    }
+    .my-float{
+        margin-top:11px;
+    }
+
+
 }
+
+
+/*  --- 580 AND  760--- */
+/*==========================*/
 @media screen and (min-device-width: 580px) and (max-device-width: 760px){
     #home{
         min-height: 480px;
@@ -1075,6 +1089,10 @@ label{
         font-size: 17px;
     }
 }
+
+
+/*  --- 760 AND  1024--- */
+/*==========================*/
 @media screen and (min-device-width: 760px) and (max-device-width: 1024px){
     #home{
         min-height: 650px;
@@ -1110,6 +1128,10 @@ label{
         margin-bottom: 15px;
     }
 }
+
+
+/*  --- 1024 AND  1440--- */
+/*==========================*/
 @media screen and (min-device-width: 1024px) and (max-device-width: 1440px){
     #home{
         min-height: 550px;
