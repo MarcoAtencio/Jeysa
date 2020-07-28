@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="servicio col-md-6 col-6">
-                        <a href="client/man" class="content-center">
+                        <a href="{{route('man.index')}}" class="content-center">
                             <div class="ser">
                                 <img src="image/hombre.png" alt=""/>
                                 <h3>Caballeros</h3>

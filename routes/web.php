@@ -1,7 +1,6 @@
 <?php
 
-use App\Product;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'HomeController@index')->name('home');
+
 Route::get("/admin",function (){
     return view("admin");
 })->name("adminHome");
@@ -25,34 +24,16 @@ Auth::routes();
 
 
 /*clientes*/
-Route::get('/client', function () {
+Route::get('/', function () {
     return view('client');
 })->name('client');
-Route::get('/client/dealings', function () {
+Route::get('/dealings', function () {
     return view('clients.dealings');
 });
-Route::get('/client/comments', function () {
+Route::get('/comments', function () {
     return view('clients.comments');
 });
-Route::get('/client/man', function () {
-    $products = Product::all();
-    $products= collect($products)->map(function ($product){
-        $image = DB::table('images')->where('ID_Product','=', $product->id)->get()->first();
-        $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();
-        $product->discount = $discount->amount;
-        if(isset($image->path)){
-            $product->image1 = $image->path;
-        }
-        else {
+Route::resource('/man','ProductMan')->only(["index", "show"]);
 
-        }
 
-        return $product;
-    });
 
-    return view('clients.man',["products" => $products]);
-});
-
-Route::get('/client/{$id}', function () {
-    return view('clients.manDetail');
-})->name("showProduct");
