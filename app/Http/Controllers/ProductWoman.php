@@ -65,9 +65,9 @@ class ProductWoman extends Controller
     {
         $product = Product::findOrFail($id);
         $images = DB::table('images')->where('ID_Product','=', $product->id)->get();
-        $product->image1 = $images[0]->path;
-        $product->image2 = $images[1]->path;
-        $product->image3 = $images[2]->path;
+        $product->image1 = $images[0]->path ?? '';
+        $product->image2 = $images[1]->path ?? '';
+        $product->image3 = $images[2]->path ?? '';
 
         return view('clients.manDetail',["product"=>$product]);
     }
