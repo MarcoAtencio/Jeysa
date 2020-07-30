@@ -27,7 +27,7 @@ class ProductController extends Controller
             $image = DB::table('images')->where('ID_Product','=', $product->id)->get();
             $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();
             $product->discount = $discount->amount;
-            if(isset($image[0]->path)){
+            if(isset($image[0]->path) && isset($image[1]->path) && isset($image[2]->path)){
                 $product->image1 = $image[0]->path;
                 $product->image2 = $image[1]->path;
                 $product->image3 = $image[2]->path;
