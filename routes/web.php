@@ -37,6 +37,7 @@ Route::get('/comments', function () {
     return view('clients.comments');
 });
 Route::resource('/man','ProductMan')->only(["index", "show"]);
+Route::resource('/woman','ProductWoman')->only(["index", "show"]);
 
 
 
