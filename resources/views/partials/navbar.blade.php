@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a href="{{ route('adminHome')}}"><img src="{{asset('image/logo1.png')}}" alt=""/></a>
+        <a href="https://jeysa21.herokuapp.com/admin"><img src="https://jeysa21.herokuapp.com/image/logo1.png" alt=""/></a>
         <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Opciones

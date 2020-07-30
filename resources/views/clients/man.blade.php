@@ -48,10 +48,10 @@
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
                                         <h6><i class="fas fa-tags"></i> {{ $product->discount }}%</h6>
-                                        <a href="{{route('man.show',$product->id)}}"class="iconver">
+                                        <a href="https://jeysa21.herokuapp.com/man/{{$product->id}}"  class="iconver">
                                             <i class="fas fa-expand"></i> <br><h3>Ver</h3>
                                         </a>
-                                        <img src="{{asset('product/img/'.$product->image1)}}" alt=""/>
+                                        <img src="https://jeysa21.herokuapp.com/product/img/{{$product->image1}}"  alt=""/>
                                         <div class="cuadrilla">
                                             <h2>{{ $product->name }}</h2>
                                             <div class="contenido">
