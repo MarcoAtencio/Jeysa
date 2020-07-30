@@ -15,7 +15,7 @@ class ProductWoman extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = Product::where('ID_Gender',2)->get();
         $products= collect($products)->map(function ($product){
             $image = DB::table('images')->where('ID_Product','=', $product->id)->get()->first();
             $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();

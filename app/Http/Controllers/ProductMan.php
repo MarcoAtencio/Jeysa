@@ -15,7 +15,7 @@ class ProductMan extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = Product::where('ID_Gender',1)->get();
         $products= collect($products)->map(function ($product){
         $image = DB::table('images')->where('ID_Product','=', $product->id)->get()->first();
         $discount = DB::table('discounts')->where('ID_Product','=', $product->id)->get()->first();
@@ -64,10 +64,10 @@ class ProductMan extends Controller
     {
         $product = Product::findOrFail($id);
         $images = DB::table('images')->where('ID_Product','=', $product->id)->get();
-        $product->image1 = $images[0]->path; 
-        $product->image2 = $images[1]->path; 
-        $product->image3 = $images[2]->path; 
-       
+        $product->image1 = $images[0]->path;
+        $product->image2 = $images[1]->path;
+        $product->image3 = $images[2]->path;
+
         return view('clients.manDetail',["product"=>$product]);
     }
 
