@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <img src="https://jeysa21.herokuapp.com/image/logo1.png" alt=""/>
+        <a href="https://jeysa21.herokuapp.com"><img src="https://jeysa21.herokuapp.com/image/logo1.png" alt=""/>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
