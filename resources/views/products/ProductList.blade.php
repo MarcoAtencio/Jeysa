@@ -33,9 +33,9 @@
                     <td>20 %</td>
                     <td>{{ $product->price }}</td>
                     <td>5</td>
-                    <td>{{$product->imagen1}}</td>
-                    <td>{{$product->imagen2}}</td>
-                    <td>{{$product->imagen3}}</td>
+                    <td>{{$product->image1 ?? ''}}</td>
+                    <td>{{$product->image2 ?? ''}}</td>
+                    <td>{{$product->image3 ?? ''}}</td>
                     <td>activo</td>
                     <td>
                         <a href="{{ route('product.edit',$product->id) }}">
@@ -48,10 +48,6 @@
                 </tbody>
             </table>
 
-
-
-
-            {{ $products->links() }}
 
     </div>
 

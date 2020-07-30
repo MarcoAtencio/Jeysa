@@ -11,13 +11,13 @@
 <div class="form-group row">
     <label class="col-sm-2 col-form-label">Nombres</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" name="name" required="" placeholder="Ingrese nombre.." value="{{ isset($product->name) ? $product->name : '' }}"/>
+        <input type="text" class="form-control" name="name" required="" placeholder="Ingrese nombre.." value="{{ isset($product->name ) ? $product->name  : '' }}"/>
     </div>
 </div>
 <div class="form-group row">
     <label class="col-sm-2 col-form-label">Descripcion</label>
     <div class="col-sm-10">
-        <textarea class="form-control" name="description" required="" placeholder="Ingrese descripcion.." >{{ isset($product->description) ? $product->description : '' }}</textarea>
+        <textarea class="form-control" name="description" required="" placeholder="Ingrese descripcion.." >{{ isset($product->description ) ? $product->description  : '' }}</textarea>
     </div>
 </div>
 <div class="form-group row">
@@ -25,7 +25,7 @@
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="type">
             @foreach($type as $item)
-                <option value="{{ $item }}" @if($product->ID_Type=== $item) selected='selected' @endif>{{ $item }}</option>
+                <option value="{{ $item }}" selected="{{($product->ID_Type?? '' == $item) ? 'selected' :''}}" >{{ $item }}</option>
             @endforeach
 
         </select>
@@ -36,7 +36,7 @@
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="gender">
             @foreach($gender as $item)
-                <option value="{{ $item }}" @if($product->ID_Gender=== $item) selected='selected' @endif>{{ $item }}</option>
+                <option value="{{ $item }}"  selected="{{($product->ID_Gender ?? ''== $item) ? 'selected' : ''}}">{{ $item }}</option>
             @endforeach
         </select>
     </div>
