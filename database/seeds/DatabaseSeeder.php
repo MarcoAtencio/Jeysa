@@ -92,23 +92,6 @@ class DatabaseSeeder extends Seeder
             "ID_Size" => 3
         ]);
 
-        DB::table("images")->insert([
-            "path" => "images/producto1.png",
-            "ID_Product" => 1
-        ]);
-        DB::table("images")->insert([
-            "path" => "images/producto2.png",
-            "ID_Product" => 1
-        ]);
-        DB::table("images")->insert([
-            "path" => "images/producto3.png",
-            "ID_Product" => 2
-        ]);
-        DB::table("images")->insert([
-            "path" => "images/producto4.png",
-            "ID_Product" => 2
-        ]);
-
         DB::table("discounts")->insert([
             "amount" => 0.6,
             "ID_Product" => 2
