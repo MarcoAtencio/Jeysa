@@ -25,7 +25,7 @@
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="type">
             @foreach($type as $item)
-                <option value="{{ $item }}" selected="{{($product->ID_Type?? '' == $item) ? 'selected' :''}}" >{{ $item }}</option>
+                <option value="{{ key($item) }}" selected="{{($product->ID_Type?? '' == $item) ? 'selected' :''}}" >{{ $item }}</option>
             @endforeach
 
         </select>
@@ -36,7 +36,7 @@
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="gender">
             @foreach($gender as $item)
-                <option value="{{ $item }}"  selected="{{($product->ID_Gender ?? ''== $item) ? 'selected' : ''}}">{{ $item }}</option>
+                <option value="{{ key($item) }}"  selected="{{($product->ID_Gender ?? ''== $item) ? 'selected' : ''}}">{{ $item }}</option>
             @endforeach
         </select>
     </div>
