@@ -19,7 +19,7 @@
                 </div>
             </div>
         </a>
-        <a href="https://jeysa21.herokuapp.com/admin/product/create"  class="boton varones col-md-4">
+        <a href="https://jeysa21.herokuapp.com/admin/product"  class="boton varones col-md-4">
         <div class="row">
             <div class="col-md-8">
                 <h2>Actualizar producto varón</h2>
