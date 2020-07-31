@@ -15,13 +15,13 @@
                                     <h6><i class="fas fa-tags" style="font-size: 20px; color: white"></i> -20%</h6>
 
                                     <div class="carousel-item active" style="height: 100vh">
-                                        <img src="{{asset('image/ca1.jpg')}}"  >
+                                        <img src="{{asset('product/img/'.$product->image1)}}" >
                                     </div>
                                     <div class="carousel-item" style="height: 100vh">
-                                        <img src="{{asset('image/ca2.jpg')}}" >
+                                        <img src="{{asset('product/img/'.$product->image2)}}" >
                                     </div>
                                     <div class="carousel-item" style="height: 100vh">
-                                        <img src="{{asset('image/ca3.jpg')}}" >
+                                        <img src="{{asset('product/img/' .$product->image3)}}" >
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
