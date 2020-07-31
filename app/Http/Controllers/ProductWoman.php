@@ -31,7 +31,7 @@ class ProductWoman extends Controller
             return $product;
         });
 
-        return view('clients.man',["products" => $products]);
+        return view('clients.woman',["products" => $products]);
     }
 
     /**
@@ -69,7 +69,7 @@ class ProductWoman extends Controller
         $product->image2 = $images[1]->path ?? '';
         $product->image3 = $images[2]->path ?? '';
 
-        return view('clients.manDetail',["product"=>$product]);
+        return view('clients.womanDetail',["product"=>$product]);
     }
 
     /**

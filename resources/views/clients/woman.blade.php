@@ -43,36 +43,41 @@
 
                         <div class="productos">
                             <div class="row">
+
+                            @foreach($products as $product)
                                 <div class="col-lg-4 col-md-6 col-6 content-center">
                                     <div class="cab">
-                                        <h6><i class="fas fa-tags"></i> -20%</h6>
-
-                                        <a href="woman/Detail" class="iconver">
+                                        <h6><i class="fas fa-tags"></i> {{ $product->discount }}%</h6>
+                                        <a href="https://jeysa21.herokuapp.com/woman/{{$product->id}}"  class="iconver">
                                             <i class="fas fa-expand"></i> <br><h3>Ver</h3>
                                         </a>
-                                        <img src="{{asset('image/POLO(CORTADO).png')}}" alt=""/>
+                                        <img src="https://jeysa21.herokuapp.com/product/img/{{$product->image1}}"  alt=""/>
                                         <div class="cuadrilla">
-                                            <h2>Falda</h2>
+                                            <h2>{{ $product->name }}</h2>
                                             <div class="contenido">
                                                 <div class="row content-center">
                                                     <div class="col-md-6">
-                                                        <h3>Talla S</h3>
+                                                        <h3>Talla M</h3>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p>Stock 0 uni.</p>
+                                                        <p>Stock 1 uni.</p>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <h4>Antes <br>S/. <del>50</del></h4>
-
+                                                        <h4>Antes <br>S/. <del>{{ $product->price }}</del></h4>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <h5>Ahora <br>S/. 40</h5>
+                                                        {{ $des = ($product->price*$product->discount)/100 }}
+                                                        {{ $precio = $product->price - $des}}
+                                                        <h5>Ahora <br>S/. {{$precio}}</h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                @endforeach
+
                             </div>
                         </div>
                     </div>
