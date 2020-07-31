@@ -1,12 +1,3 @@
-@php
-    // listado
-    $type  = ["pantalon",
-    "camisa",
-    "polo"];
-
-    $gender  = ["male",
-    "female"];
-@endphp
 
 <div class="form-group row">
     <label class="col-sm-2 col-form-label">Nombres</label>
@@ -24,8 +15,8 @@
     <label class="col-sm-2 col-form-label">Tipo</label>
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="type">
-            @foreach($type as $item)
-                <option value="{{ key($item) }}" selected="{{($product->ID_Type?? '' == $item) ? 'selected' :''}}" >{{ $item }}</option>
+            @foreach($types as $item)
+                <option value="{{ $item->id }}" selected="{{($product->ID_Type?? '' == $item->name) ? 'selected' :''}}" >{{ $item->name }}</option>
             @endforeach
 
         </select>
@@ -35,8 +26,8 @@
     <label class="col-sm-2 col-form-label">Genero</label>
     <div class="col-sm-10">
         <select class="custom-select is-invalid" name="gender">
-            @foreach($gender as $item)
-                <option value="{{ key($item) }}"  selected="{{($product->ID_Gender ?? ''== $item) ? 'selected' : ''}}">{{ $item }}</option>
+            @foreach($genders as $item)
+                <option value="{{ $item->id }}"  selected="{{($product->ID_Gender ?? ''== $item->name) ? 'selected' : ''}}">{{ $item->name }}</option>
             @endforeach
         </select>
     </div>

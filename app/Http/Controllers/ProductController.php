@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Discount;
 use App\ImagesProduct;
 use App\Product;
+use App\Type;
+use App\Gender;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -50,7 +52,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view("products.ProductRegist");
+        $types = Type::all();
+        $genders = Gender::all();
+        return view("products.ProductRegist",["types"=> $types, "genders"=> $genders]);
     }
 
     /**

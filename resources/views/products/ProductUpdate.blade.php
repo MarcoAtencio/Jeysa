@@ -12,7 +12,7 @@
             <form action="{{ route('product.update',$product->id)}}" method="post" enctype="multipart/form-data" class="was-validated">
                 @csrf
                 @method('patch')
-                @include('partials.formProduct')
+                @include('partials.formProduct',['ypes'=> $types, 'genders'=> $genders])
 
             </form>
         </div>

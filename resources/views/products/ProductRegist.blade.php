@@ -11,7 +11,7 @@
 
         <form action="{{ route('product.store')}}" method="post" enctype="multipart/form-data" class="was-validated">
             @csrf
-            @include('partials.formProduct')
+            @include('partials.formProduct',['ypes'=> $types, 'genders'=> $genders])
 
         </form>
     </div>
